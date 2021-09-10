@@ -1,0 +1,188 @@
+
+package com.company;
+
+import java.util.Scanner;
+
+public class HomeWork {
+    public static void main(String[] args) {
+        System.out.println("Привет, Мир!");
+        System.out.println("");
+        //1.записать инструкцию, которая присваивает переменной х значение 1,5
+        double x = 1.5;
+        System.out.println(x);
+        System.out.println("");
+
+        //3.записать инструкцию, которая увеличивает на единицу значение переменной n
+        int n = 5;
+        n += 1;
+        System.out.println(n);
+        System.out.println("");
+
+        //5.написать инструкцию вычисления среднего арифметического переменных х1 и х2.
+        int x1 = 10, x2 = 17, summ;
+        summ = x1 + x2;
+        double average = (double) summ / 2;
+        System.out.println("Среднее арифметическое переменных х1 и х2 " + "= " + average);
+        System.out.println("");
+
+        //7.написать инструкцию, которая увеличивает значение переменной х на величину,
+        //находящуюся в переменной dx.
+        int dx = 3;
+        x = x + dx;
+        System.out.println(x);
+        System.out.println();
+
+        //9.записать в виде инструкции присваивания формулу пересчёта расстояния
+        //из километров в вёрсты (1 верста - 1066,8 м).
+        double numberKm, numberV;
+        numberKm = 32.5;
+        numberV = numberKm * 1000 / 1066.8;
+        System.out.println(numberKm + "км " + "= " + numberV + " вёрст");
+        System.out.println();
+
+        //11.записать в виде инструкции присваивания формулу вычисления
+        //площади треугольника: s = a*h/2
+        int a, h, s;
+        a = 5;
+        h = 6;
+        s = a * h / 2;
+        System.out.println("Площадь треугольника равна " + s);
+        System.out.println();
+
+        //13.записать в виде инструкции присваивания формулу вычисления
+        //площади круга: sCircle = PI*r*r
+        double r, sCircle;
+        r = 4.5;
+        sCircle= Math.PI * (r * r);
+        System.out.println("Площадь круга равна: " + sCircle);
+        System.out.println();
+
+        //15.записать в виде инструкции присваивания формулу вычисления
+        //oбъёма параллелепипеда: vParal = aP * bP * hP
+        double aP = 2.2, bP = 3.3, hP = 4.1;
+        double vParal = aP * bP * hP;
+        System.out.println("Объём параллелепипеда равен: " + vParal);
+        System.out.println();
+
+        //17.записать в виде инструкции присваивания формулу вычисления
+        //oбъёма цилиндра: vСylinder = PI * rC * rC * hC
+        double rC, hC, vCylinder;
+        rC = 5.8; hC = 7.4;
+        vCylinder = Math.PI * rC * rC * hC;
+        System.out.println("Объём цилиндра равен: " + vCylinder);
+        System.out.println();
+
+        //19.записать в виде инструкции присваивания формулу вычисления
+        //oбъёма конуса: vCone = (PI * rCone  * rCone * hCone) / 3
+        int rCone, hCone;
+        double vCone;
+        rCone  = 3; hCone = 4;
+        vCone = (Math.PI * rCone * rCone * hCone) / 3;
+        System.out.println("Объём конуса равен: " + vCone);
+        System.out.println();
+
+        //21.записать в виде инструкции присваивания формулу для вычисления
+        //силы тока по известным значениям напряжения и сопротивления
+        double amperage, voltage;
+        int resistance;
+        voltage = 1.5;
+        resistance = 6;
+        amperage = voltage / resistance;
+        System.out.println("Сила тока равна: " + amperage);
+        System.out.println();
+
+        //2.2. загадать 2-значное число в  десятичной системе.
+        //преобразовать его в двоичную и 16-ричную.
+        System.out.println("Задание 2.2.");
+        int i2 = 78;
+        System.out.println(Integer.toBinaryString(i2));
+        System.out.println(Integer.toHexString(i2));
+        System.out.println();
+
+        //2.3. загадать 3-значное число в двоичной системе.
+        //преобразовать его в десятичную и 16-ричную.
+        System.out.println("Задание 2.3.");
+        int i3 = 0b1010001110;
+        System.out.println(Integer.toString(i3));
+        System.out.println(Integer.toHexString(i3));
+        System.out.println();
+
+        //2.4. загадать 6-значное число в двоичной системе.
+        //преобразовать его в десятичную и 16-ричную.
+        System.out.println("Задание 2.4.");
+        int i4 = 0b11110001001000000;
+        System.out.println(Integer.toString(i4));
+        System.out.println(Integer.toHexString(i4));
+        System.out.println();
+
+        //2.5. загадать 2-значное число в 16-ричной системе.
+        //преобразовать его в двоичную и десятичную.
+        System.out.println("Задание 2.5.");
+        int i =0x63;
+        System.out.println(Integer.toBinaryString(i));//Бинарный формат числа
+        System.out.println(Integer.toString(i));//десятичный формат
+        System.out.println();
+
+        //2.6. загадать 4-значное число в 16-ричной системе.
+        //преобразовать его в двоичную и десятичную.
+        System.out.println("Задание 2.6.");
+        int i6 =0x1ED8;
+        System.out.println(Integer.toBinaryString(i6));//Бинарный формат числа
+        System.out.println(Integer.toString(i6));//десятичный формат
+        System.out.println();
+
+        //3.2.Дано трёхзначное число. В нём зачеркнули первую слева цифру и
+        //приписали её справа.Вывести полученно число.
+        System.out.println("Задание 3.2.");
+        Scanner input = new Scanner(System.in);
+        int q;
+        System.out.println("Введите трёхзначное число: ");
+        q = input.nextInt();
+        int q1 = q / 100;
+        int q2 = (q / 10) % 10;
+        int q3 = q % 10;
+        System.out.println((q2 * 100) + (q3 * 10) + q1);
+        System.out.println();
+
+        //3.5.Дано трёхзначное число. Изменить одну его цифру так
+        //чтобы оно стало палиндромом.
+        System.out.println("Задание 3.5.");
+        Scanner scanner =  new Scanner(System.in);
+        int p, palindrome;
+        System.out.println("Введите трёхзначное число: ");
+        p = input.nextInt();
+        int p_1 = p / 100;
+        int p_2 = (p / 10) % 10;
+        int p_3 = p_1;
+        palindrome = (p_1 * 100) + (p_2 * 10) + p_3;
+        System.out.println("palindrome: " + palindrome);
+        System.out.println();
+
+        //3.8.Определить является ли введённое 3-значное число палидромом
+        System.out.println("Задание 3.8.");
+        Scanner scanner1 =  new Scanner(System.in);
+        int j;
+        System.out.println("Введите трёхзначное число: ");
+        j = input.nextInt();
+        int j_1 = j / 100;
+        int j_3 = j % 10;
+        if (j_1 == j_3) System.out.println("Число " + j + " является палиндромом");
+        else
+        System.out.println("Число " + j + " не является палиндромом");
+        System.out.println();
+
+        //3.11.Дано трёхзначное число. Округлить его до десятков.
+        System.out.println("Задание 3.11.");
+        Scanner scanner2 =  new Scanner(System.in);
+        int f;
+        System.out.println("Введите трёхзначное число: ");
+        f = input.nextInt();
+        int f_1 = f / 100;
+        int f_2 = (f / 10) % 10;
+        int f_3 = f % 10;
+        if (f_3 > 0 & f_3 < 5) System.out.println(f_1 * 100 + f_2 * 10);
+        else
+        System.out.println(f_1 * 100 + f_2 * 10 + 10);
+
+    }
+}
